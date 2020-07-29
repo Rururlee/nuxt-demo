@@ -15,6 +15,9 @@ export default {
   ** Headers of the page
   ** See https://nuxtjs.org/api/configuration-head
   */
+  router: {
+    base: '/nuxt-demo/'
+  },
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -26,11 +29,11 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      { src: "/js/jquery.min.js", body: true },
-      { src: "/js/browser.min.js", body: true },
-      { src: "/js/breakpoints.min.js", body: true },
-      { src: "/js/util.js", body: true },
-      { src: "/js/main.js", body: true }
+      { src: "/nuxt-demo/js/jquery.min.js", body: true },
+      { src: "/nuxt-demo/js/browser.min.js", body: true },
+      { src: "/nuxt-demo/js/breakpoints.min.js", body: true },
+      { src: "/nuxt-demo/js/util.js", body: true },
+      { src: "/nuxt-demo/js/main.js", body: true }
     ]
 
   },
